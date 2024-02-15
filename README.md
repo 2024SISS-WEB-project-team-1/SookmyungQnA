@@ -91,6 +91,10 @@ MariaDB [2024SISS]> <br>CREATE TABLE answers(
 
 ### 7주차 - 답변글 등록 오류 수정, 검색 기능, 수정 및 삭제, 마이페이지 프로필 사진 등록
 1. 답변글 등록 후 답변글을 확인하는 과정에서 계속 오류가 났는데, 쿼리와 반복문 수정 후 오류 해결
-2. 검색 기능 구현 => 하나는 input으로 검색어를 직접 입력해서 제목/내용/작성자 중에 옵션을 선택해서 검색할 수 있는 기능, 또 하나는 아래 있는 카테고리를 클릭했을 때 각각에 해당하는 카테고리를 지닌 글의 목록을 화면에 출력해주는 기능
-3. 
+<시연>
+<img src="https://github.com/2024SISS-WEB-project-team-1/SookmyungQnA/assets/134305960/a336ac59-3837-4596-811e-df191252a2e6"  width="900" height="500"/>
+<img src="https://github.com/2024SISS-WEB-project-team-1/SookmyungQnA/assets/134305960/ff6471aa-f66d-441d-9c27-c8efbe2eb0d1"  width="500" height="450"/>
+
+3. 검색 기능 구현 => 하나는 input으로 검색어를 직접 입력해서 제목/내용/작성자 중에 옵션을 선택해서 검색할 수 있는 기능, 또 하나는 아래 있는 카테고리를 클릭했을 때 각각에 해당하는 카테고리를 지닌 글의 목록을 화면에 출력해주는 기능
+
 
