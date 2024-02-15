@@ -1,0 +1,61 @@
+/* 게시판 글쓰기 */
+#question_write {
+	width:900px;
+	position:relative;
+	margin:0 auto;
+}
+#write_area {
+	margin-top:70px;
+	font-size:14px;
+}
+#in_name {
+	margin-top:30px;
+}
+#in_name textarea {
+	font-weight:bold;
+	font-size:26px;
+	color:#333;
+	width: 900px;
+	border:none;
+	resize: none;
+}
+#q_title {
+	margin-top:30px;
+}
+#q_title textarea {
+	font-weight:bold;
+	font-size:26px;
+	color:#333;
+	width: 900px;
+	border:none;
+	resize: none;
+}
+.wi_line {
+	border:solid 1px lightgray;
+	margin-top:10px;
+}
+#q_content {
+	margin-top:10px;
+}
+#q_content textarea {
+	font-size:20px;
+	color:#333;
+	width: 900px;
+	height: 400px;
+	resize: none;
+}
+
+.q_hashtag {
+    font-size:16px;
+    margin-top:10px;
+}
+
+.q_bt {
+	margin-top:20px;
+	text-align:center;
+    margin-bottom:20px;
+}
+.q_bt button {
+	width:100px;
+	height:30px;
+}

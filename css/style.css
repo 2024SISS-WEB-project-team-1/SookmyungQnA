@@ -1,0 +1,70 @@
+.board_list{
+    width: 100%;
+    border-top: 2px solid #0a58ca;
+}
+
+.board_list > div{
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+.board_list > div.top{
+    border-bottom: 1px solid #999;
+}
+
+.board_list > div:last-child{
+    border-bottom: 1px solid #0a58ca;
+}
+
+.board_list > div > div{
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.board_list > div.top > div{
+    font-weight: 600;
+}
+
+.board_list .num{
+    width: 10%;
+}
+
+.board_list .title{
+    width: 60%;
+    text-align: left;
+}
+
+.board_list .top .title{
+    text-align: center;
+}
+
+.board_list .field{
+    width: 10%;
+}
+
+.board_list .answer{
+    width: 10%;
+}
+
+.board_list .date{
+    width: 10%;
+}
+
+
+.table_row{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

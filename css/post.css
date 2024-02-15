@@ -1,0 +1,42 @@
+.col-lg-8 {
+    padding: 60px;
+}
+
+.question_post{
+    padding-left: 50px;
+}
+.question_content{
+    height: 300px;
+}
+.question_footer{
+    background-color: rgba(188, 188, 188, 0.3);
+    padding: 15px;
+}
+
+.question_edit{
+    padding: 10px;
+}
+.col-lg-4{
+    padding: 60px;
+}
+
+#answer_content {
+    height: 300px;
+}
+
+#answer_content textarea {
+	font-size:20px;
+	color:#333;
+	width: 300px;
+	height: 300px;
+	resize: none;
+}
+
+.answer_footer{
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+
+.answer_edit{
+    padding: 10px;
+}
