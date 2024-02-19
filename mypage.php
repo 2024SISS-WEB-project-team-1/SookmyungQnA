@@ -52,13 +52,15 @@
     <div class="wrap">
       <div class="greenContainer">
 
-        <!-- 프로필 이미지 선택 form 
+         
+
+        <div>
+          <!-- 프로필 이미지 선택 form  --> 
         <form action="img_process.php" method="post" enctype="multipart/form-data"> 
             <input type="file" name="img" accept="image/jpeg,image/jpg,image/png">
             <button type="submit">확인</button>
-        </form> -->
-
-        <div>
+        </form>
+        <img src="../images/<?=$file['name']?>">
           <div class="major"><?=$user['major']?></div>
           <div class="name"><?=$user['name']?></div>
         </div>    

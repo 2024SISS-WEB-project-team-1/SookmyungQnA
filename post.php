@@ -113,8 +113,8 @@
                                 <div> # <?php echo $question['hashtag']; ?></div>
                             </div>
                             <div class="question_edit"> 
-                                <button> <a href="edit.php?post_id=<?php echo $id ?>"> 수정 </a> </button>
-                                <button> <a href="delete.php?post_id=<?php echo $id ?>">삭제</a></button>
+                                <button> <a href="edit_question.php?post_id=<?php echo $question['id'] ?>"> 수정 </a> </button>
+                                <button> <a href="delete_question.php?post_id=<?php echo $question['id'] ?>">삭제</a></button>
                             </div>
                         </div>
                     </div>
@@ -145,13 +145,11 @@
                                     <br>작성일자:
                                     <input type="datetime-local" name='currentDatetime' id='currentDatetime'/>
                                 </div>
-                            </div>
-                            <div class="answer_edit"> 
+                                <div class="answer_edit"> 
                                 <button type="submit"> 등록 </button>
-                                <!-- 작성자와 name이 다르다면 버튼 숨기기 -->
-                                <button> <a href="edit.php?post_id=<?php echo $id ?>"> 수정 </a> </button>
-                                <button> <a href="delete.php?post_id=<?php echo $id ?>"> 삭제 </a> </button>
                             </div>
+                            </div>
+                            
                         </form>
                     </div>
                     <!-- Side widget (혹시 몰라서 남겨둠)
@@ -162,7 +160,7 @@
                     -->
                 </div>
                 <div class="question_post">
-                    <br><h2> A. 답변글 목록</h2>
+                    <br><h2> 답변 목록</h2>
                     <hr>
                     <?php
                         //answers 테이블에서 현재 보고 있는 질문의 post_id를 보유한 답변을 모두 출력하기 (오류 수정됨)
@@ -171,6 +169,7 @@
                             $author = $answer['author'];
                             $content = $answer['content'];
                             $date = $answer['date'];
+                            $answer_id = $answer['id']; 
                     ?>
                     <div class="question_content"> 
                         <?php echo $content; ?>
@@ -179,6 +178,11 @@
                         <div><?php echo $author; ?> </div>
                         <div><?php echo $date; ?> </div>
                     </div>
+                    <div class="answer_edit"> 
+                                <!-- 작성자와 name이 다르다면 버튼 숨기기 -->
+                                <button> <a href="edit.php?post_id=<?php echo $id ?>"> 수정 </a> </button>
+                                <button> <a href="delete_answer.php?post_id=<?php echo $answer_id ?>"> 삭제 </a> </button>
+                            </div>
                     <?php } ?>
                 </div>
             </div>
