@@ -17,6 +17,14 @@
     }
     $user = $result->fetch_assoc();
 
+    $query_1 = "SELECT * from question";
+    $result=  $conn->query($query_1);
+    $count1 = mysqli_num_rows($result);
+
+    $query_2 = "SELECT * from answers";
+    $result=  $conn->query($query_2);
+    $count2 = mysqli_num_rows($result);
+
 ?>
 
 
@@ -55,31 +63,17 @@
          
 
         <div>
-          <!-- 프로필 이미지 선택 form  --> 
+          <!-- 프로필 이미지 선택 form  
         <form action="img_process.php" method="post" enctype="multipart/form-data"> 
             <input type="file" name="img" accept="image/jpeg,image/jpg,image/png">
             <button type="submit">확인</button>
-        </form>
-        <img src="../images/<?=$file['name']?>">
+        </form> 
+        <img src="../images/<?=$file['name']?>">-->  
           <div class="major"><?=$user['major']?></div>
           <div class="name"><?=$user['name']?></div>
         </div>    
         <div class="modify">i</div>    
       </div>
-      <div class="summaryContainer">
-          <div class="item">
-            <div class="number">0</div>
-            <div>질문/답변 작성 수</div>
-          </div>
-          <div class="item">
-            <div class="number">0</div>
-            <div>채택된 답변 수</div>
-          </div>
-          <div class="item">
-            <div class="number">0</div>
-            <div>내공</div>
-          </div>
-      </div>  
       <div class="shippingStatusContainer">
         <div class="title">
           나의 활동
@@ -88,22 +82,21 @@
 
           <div class="item">
             <div>
-              <div class="green number">0</div>
+              <div class="green number"> <?php echo number_format($count1); ?>   </div>
               <div class="text">질문글</div>
             </div>
             <div class="icon"> > </div>
           </div>     
           <div class="item">
             <div>
-              <div class="number">0</div>
+              <div class="number"><?php echo number_format($count2); ?></div>
               <div class="text">답변글</div>
             </div>
             <div class="icon"> > </div>
           </div>     
           <div class="item">
             <div>
-              <div class="green number">0</div>
-              <div class="text">질문을 기다리고 있는 글</div>
+              
             </div>
             <div class="icon"> > </div>
           </div>     

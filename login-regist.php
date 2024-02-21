@@ -24,7 +24,7 @@
         <form method = "post" action="regist_process.php">
           <h1>계정 생성하기</h1>
 
-          <span> 머라구 적지 </span>
+          <span>  </span>
           <input type="text" placeholder="아이디" name= "userID" />
           <input type="password" placeholder="비밀번호" name = "password" />
           <input type="text" placeholder="이름" name = "name" />
@@ -40,7 +40,7 @@
           <br>
           <input type="text" placeholder="아이디" name="loginID"/>
           <input type="password" placeholder="비밀번호" name="loginPW"/>
-          <a href="#">비밀번호를 잊으셨다면? #이거 구현 미정</a>
+          <a href="#"></a>
           <button> 로그인 </button>
         </form>
       </div>
